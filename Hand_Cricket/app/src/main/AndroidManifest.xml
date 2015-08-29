@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.android.hand_cricket" >
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/appname"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name=".Menu"
+            android:label=" " >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Screen1"
+            android:label="HAND CRICKET!!!" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".screen2"
+            android:label="HAND CRICKET" >
+        </activity>
+        <activity
+            android:name=".play_screen"
+            android:label=" " >
+        </activity>
+        <activity
+            android:name=".score_screen"
+            android:label=" " >
+        </activity>
+        <activity
+            android:name=".help_screen"
+            android:label=" " >
+        </activity>
+        <activity
+            android:name=".toss1_screen"
+            android:label=" " >
+        </activity>
+        <activity
+            android:name=".uwon"
+            android:label=" " >
+        </activity>
+        <activity
+            android:name=".mainplayscrn"
+            android:label=" " >
+        </activity>
+        <activity
+            android:name=".cwon"
+            android:label=" " >
+        </activity>
+        <activity
+            android:name=".res_screen"
+            android:label=" " >
+        </activity>
+
+
+
+        <activity
+            android:name=".result"
+            android:label=" " >
+        </activity>
+        <activity
+            android:name=".help_screen2"
+            android:label=" " >
+        </activity>
+    </application>
+
+</manifest>
