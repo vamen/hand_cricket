@@ -9,22 +9,28 @@ import android.view.View;
 
 public class Menu extends ActionBarActivity {
 
+    android.support.v7.widget.CardView cardView1;
+    android.support.v7.widget.CardView cardView2;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_menu);
+        cardView1=(android.support.v7.widget.CardView)findViewById(R.id.play);
+        cardView2=(android.support.v7.widget.CardView)findViewById(R.id.help);
+        cardView1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(Menu.this,toss1_screen.class));
+            }
+        });
+        cardView2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(Menu.this,help_screen.class));
+            }
+        });
     }
 
-    public void play_screen(View v){
-
-        startActivity(new Intent(Menu.this,play_screen.class));
-    }
-
-
-   public void help(View v){
-
-        startActivity(new Intent(Menu.this,help_screen.class));
-    }
 
 
 

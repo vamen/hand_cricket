@@ -16,21 +16,17 @@ int game_result;
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_result);
         won= (ImageView) findViewById(R.id.wwon);
-        lost= (ImageView) findViewById(R.id.llost);
         Bundle bundle = getIntent().getExtras();
         game_result= bundle.getInt("result");
-
         if(game_result==1)
         {
-            won.setVisibility(View.VISIBLE);
-
-            lost.setVisibility(View.INVISIBLE);
+         int res=getResources().getIdentifier("gwon", "drawable", getPackageName());
+         won.setImageResource(res);
         }
         else if(game_result==0)
         {
-            won.setVisibility(View.INVISIBLE);
-
-            lost.setVisibility(View.VISIBLE);
+         int res= getResources().getIdentifier("glost", "drawable", getPackageName());
+         won.setImageResource(res);
         }
 
     }
